@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Jeu tir</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="degats"></div>
+    <div id="score" class="texte">Aliens elimines : 0</div>
+    <div id="pdv" class="texte">Points de vie : 3 / 3</div>
+    <div id="temps" class="texte">Temps restant <span id="time">00</span> secondes !</div>
+    <figure>
+        <audio autoplay id="audio" controls src="sons/atdoomgate.mp3">
+        </audio>
+    </figure>
+
+    <p id="textintro"> Bienvenue à bord du Nostromo. Vous devez survivre jusqu'à l'arrivée des secours. Défendez-vous !
+    </p>
+    <button id="boutonstart">START</button>
+
+    <canvas id="canvas"></canvas>
+
+    <button id=button_ennemi_facehugger><img id="faceHugger" src="images/vide.png"></button>
+    <button id=button_ennemi_alien><img id="alien" src="images/vide.png"></button>
+    <img id="feu" src="images/feu.png">
+    <img id="arme" src="images/arme.png">
+
+    <script type="text/javascript" src="scripts.js"></script>
+
+</body>
+
+</html>
